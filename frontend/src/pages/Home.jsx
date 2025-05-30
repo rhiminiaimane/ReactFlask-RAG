@@ -1,3 +1,5 @@
+import AboutSection from "../component/AboutSection";
+import Disclaimer from "../component/Disclaimer";
 import HeroSection from "../component/HeroSection";
 import Navbar from "../component/Navbar";
 
@@ -6,6 +8,8 @@ function Home(){
         <div>
             <Navbar />
             <HeroSection />
+            <AboutSection />
+            <Disclaimer />
         </div>
     )
 }

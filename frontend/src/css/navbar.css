@@ -27,10 +27,11 @@
 .navbar-menu {
   display: flex;
   gap: 2rem;
-  text-decoration: none;
 }
 
-.navbar-link {
+.navbar-link,
+.navbar-link:visited,
+.navbar-link:active {
   color: #4b5563;
   text-decoration: none;
   font-size: 1rem;
@@ -78,7 +79,9 @@
   display: flex;
 }
 
-.navbar-mobile-link {
+.navbar-mobile-link,
+.navbar-mobile-link:visited,
+.navbar-mobile-link:active {
   color: #4b5563;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -90,23 +93,21 @@
   color: #2563eb;
 }
 
-/* Add these styles to your existing CSS */
 .button-style {
-    background-color: #007bff;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  background-color: #007bff;
+  color: white !important;
+  padding: 0px 23px;;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
 .button-style:hover {
-    background-color: #0056b3;
-    text-decoration: none;
+  background-color: #0056b3;
+  text-decoration: none;
 }
 
-/* Also update the mobile version */
 .navbar-mobile-link.button-style {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 @media (max-width: 768px) {

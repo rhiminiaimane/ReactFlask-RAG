@@ -9,6 +9,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById('about');
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -19,9 +25,9 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="navbar-menu">
-          <Link to = '/'><a href="#" className="navbar-link">Home</a></Link>
-          <a href="#" className="navbar-link">About</a>
-          <Link to = '/chatbot'><a href="#" className="navbar-link button-style">ChatBot</a></Link>
+          <Link to="/" className="navbar-link">Home</Link>
+          <Link to="#about" className="navbar-link" onClick={scrollToAbout}>About</Link>
+          <Link to="/chatbot" className="navbar-link button-style">ChatBot</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -43,9 +49,9 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`navbar-mobile ${isOpen ? 'navbar-mobile-open' : ''}`}>
-          <a href="#" className="navbar-mobile-link">Home</a>
-          <a href="#" className="navbar-mobile-link">About</a>
-          <Link to = '/chatbot'><a href="#" className="navbar-mobile-link button-style">ChatBot</a></Link>
+          <Link to="/" className="navbar-mobile-link">Home</Link>
+          <Link to="#about" className="navbar-mobile-link" onClick={scrollToAbout}>About</Link>
+          <Link to="/chatbot" className="navbar-mobile-link button-style">ChatBot</Link>
         </div>
       </div>
     </nav>

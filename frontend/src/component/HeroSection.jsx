@@ -2,6 +2,12 @@ import React from 'react';
 import '../css/HeroSection.css';
 
 const HeroSection = () => {
+  const scrollToAbout = (e) => {
+    e.preventDefault();
+    const aboutSection = document.getElementById('about');
+    aboutSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -10,7 +16,7 @@ const HeroSection = () => {
           <p className="hero-description">
             Discover personalized insights on cancer signs, stages, and treatments with our AI-powered medical assistant, built using advanced Retrieval-Augmented Generation technology.
           </p>
-          <a href="#get-started" className="hero-cta">Learn More</a>
+          <a href="#about" className="hero-cta" onClick={scrollToAbout}>Learn More</a>
         </div>
         <div className="hero-image">
           <img
