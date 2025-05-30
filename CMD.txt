@@ -11,4 +11,5 @@ To set up the backend, follow these steps:
 To set up the frontend, follow these steps:
 
 1. cd frontend
-2. npm run dev
+2. npm install
+3. npm run dev
