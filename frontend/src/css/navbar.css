@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.navbar {
+  background-color: #ffffff;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 85%; /* Added to match hero section width */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #2563eb;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+.navbar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+.navbar-button:hover {
+  color: #2563eb;
+}
+
+.navbar-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-mobile {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 1rem;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-mobile-open {
+  display: flex;
+}
+
+.navbar-mobile-link {
+  color: #4b5563;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-mobile-link:hover {
+  color: #2563eb;
+}
+
+/* Add these styles to your existing CSS */
+.button-style {
+    background-color: #007bff;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button-style:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+}
+
+/* Also update the mobile version */
+.navbar-mobile-link.button-style {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
