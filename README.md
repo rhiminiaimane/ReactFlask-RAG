@@ -15,7 +15,7 @@ It features a clean frontend interface and a robust Flask backend.
 
 The architecture is composed of four main layers:
 
-![System Architecture](ARCHITECTURE.jpg)
+![System Architecture](./screenshots/architecture.jpg)
 
 1. **Medical Document Ingestion**
 
@@ -38,6 +38,16 @@ The architecture is composed of four main layers:
    * Context fed to Gemini 1.5 Flash API
    * Generated answer returned to the user
 
+---
+## 📸 Screenshots
+
+### 🏠 Landing Page
+
+![Landing Page](./screenshots/landing-page.png)
+
+### 🤖 Chatbot Interface
+
+![Chatbot Page](./screenshots/chatbot-page.png)
 ---
 
 ##  Setup Instructions
