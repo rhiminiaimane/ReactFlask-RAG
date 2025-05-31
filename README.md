@@ -47,7 +47,7 @@ The architecture is composed of four main layers:
 
 ### 🤖 Chatbot Interface
 
-![Chatbot Page](./screenshots/chatbot-page.png)
+![Chatbot Page](./screenshots/chatbot-page.PNG)
 ---
 
 ##  Setup Instructions
