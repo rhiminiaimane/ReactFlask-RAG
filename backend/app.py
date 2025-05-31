@@ -34,7 +34,10 @@ def process_pdfs():
         chunks_meta.extend([{"chunk": chunk, "pdf": pdf} for chunk in chunks])
         all_embeddings.append(embeddings)
 
-    index = retriever.create_or_load_faiss_index(np.vstack(all_embeddings), INDEX_PATH)
+    if all_embeddings:
+        index = retriever.create_or_load_faiss_index(np.vstack(all_embeddings), INDEX_PATH)
+    else:
+        index = retriever.create_empty_faiss_index()
     return index, chunks_meta
 
 index, chunks_meta = process_pdfs()
